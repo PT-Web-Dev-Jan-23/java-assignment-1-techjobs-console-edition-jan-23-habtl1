@@ -123,9 +123,9 @@ public class TechJobs {
             for(HashMap<String, String> job : someJobs){
                 System.out.println("\n*****");
                 for(Map.Entry<String, String> column : job.entrySet()) {
-                    System.out.println(column.getKey() + ":" +column.getValue() + ")") ;
+                    System.out.println(column.getKey() + ": " +column.getValue());
                 }
-                System.out.println("\n*****");
+                System.out.println("*****");
             }
     }
 }

@@ -43,8 +43,7 @@ public class TechJobsTest {
         String output = runProgramWithInput(input);
         String expected = getFileContents("src/test/resources/testPrintJobs.txt");
 //        assertEquals(expected, output);
-        assertEquals(expected.replaceAll("\r\n?", "\n"), output.replaceAll("r\n\?", "\n"));
-    }
+        assertEquals(expected.replaceAll("\r\n?", "\n"), output.replaceAll("\r\n?", "\n"));    }
 
     @Test
     public void testPrintJobsNoResults() throws IOException {
@@ -52,9 +51,7 @@ public class TechJobsTest {
         String output = runProgramWithInput(input);
         String expected = getFileContents("src/test/resources/testPrintJobsNoResults.txt");
 //        assertEquals(expected, output);
-        assertEquals(expected.replaceAll("\r\n?", "\n"), output.replaceAll("r\n\?", "\n"));
-
-    }
+        assertEquals(expected.replaceAll("\r\n?", "\n"), output.replaceAll("\r\n?", "\n"));    }
 
     @Test
     public void testFindByValue() throws IOException {
@@ -62,8 +59,7 @@ public class TechJobsTest {
         String output = runProgramWithInput(input);
         String expected = getFileContents("src/test/resources/testFindByValue.txt");
 //        assertEquals(expected, output);
-        assertEquals(expected.replaceAll("\r\n?", "\n"), output.replaceAll("r\n\?", "\n"));
-
+        assertEquals(expected.replaceAll("\r\n?", "\n"), output.replaceAll("\r\n?", "\n"));
     }
 
     @Test
@@ -72,8 +68,7 @@ public class TechJobsTest {
         String output = runProgramWithInput(input);
         String expected = getFileContents("src/test/resources/testCaseInsensitiveSearch.txt");
 //        assertEquals(expected, output);
-        assertEquals(expected.replaceAll("\r\n?", "\n"), output.replaceAll("r\n\?", "\n"));
-
+        assertEquals(expected.replaceAll("\r\n?", "\n"), output.replaceAll("\r\n?", "\n"));
     }
 
 
